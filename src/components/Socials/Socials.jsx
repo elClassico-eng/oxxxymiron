@@ -6,7 +6,7 @@ export const Socials = () => (
     <ul className="socials">
         {SOCIALS.map(({ icon, link }) => (
             <li title="icon" className="social-items" key={icon}>
-                <a href={link} target="_blank">
+                <a href={link}>
                     <Icon name={icon} />
                 </a>
             </li>

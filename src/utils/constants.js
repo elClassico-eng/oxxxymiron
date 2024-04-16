@@ -1,3 +1,5 @@
+export const MENU_URL = "https://65d2fe7c522627d50107c477.mockapi.io/TourItems";
+
 export const MENU = [
     { name: "Концерты", link: "tour" },
     { name: "Творчество", link: "#tracks" },

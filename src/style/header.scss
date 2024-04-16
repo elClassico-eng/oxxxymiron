@@ -33,12 +33,12 @@ header {
 
 .menu {
     @include flex;
-    column-gap: 16px;
+    column-gap: 20px;
 
     &-item {
         a {
             color: $white;
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 700;
             text-transform: uppercase;
             transition: color 0.24s ease;
