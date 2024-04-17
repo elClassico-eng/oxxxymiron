@@ -84,3 +84,21 @@ img {
     width: 16px;
     height: 16px;
 }
+
+.button-more {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: $white;
+    font-size: 14px;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    font-weight: 900;
+    transition: color 0.25s ease;
+    cursor: pointer;
+
+    &:hover {
+        color: $contrastColor;
+    }
+}

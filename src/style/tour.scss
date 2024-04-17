@@ -1,0 +1,52 @@
+.tour {
+    padding: 20px 0;
+
+    &-list {
+        margin-top: 20px;
+    }
+
+    &-banner {
+        position: relative;
+        padding-top: 32px;
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &-item {
+        @include flex;
+        padding: 29px 0;
+        text-transform: uppercase;
+        justify-content: space-between;
+        border-top: 1px solid $grey;
+
+        &:last-child {
+            border-bottom: 1px solid $grey;
+        }
+
+        &__date {
+            color: $white;
+            font-size: 20px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        &__place {
+            color: $grey;
+            font-weight: 400;
+            margin-top: 15px;
+        }
+
+        &__city {
+            color: $white;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        &__button {
+            @include button;
+        }
+    }
+}

@@ -9,7 +9,6 @@ export const fetchTourData = createAsyncThunk(
     async () => {
         try {
             const { data } = await axios.get(MENU_URL);
-            console.log(data);
             return data;
         } catch (err) {
             return err;
@@ -39,5 +38,8 @@ const tourItemsSlice = createSlice({
             });
     },
 });
+
+export const selectTourItem = (state) => state.tour.tourItem;
+export const selectisLoading = (state) => state.tour.isLoading;
 
 export default tourItemsSlice.reducer;
