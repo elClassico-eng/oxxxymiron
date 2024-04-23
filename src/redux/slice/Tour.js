@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-import { MENU_URL } from "../../utils/constants";
+import { MENU_URL_TOUR } from "../../utils/constants";
 
 import axios from "axios";
 
@@ -8,7 +8,7 @@ export const fetchTourData = createAsyncThunk(
     "tourItemsSlice/fetchTourData",
     async () => {
         try {
-            const { data } = await axios.get(MENU_URL);
+            const { data } = await axios.get(MENU_URL_TOUR);
             return data;
         } catch (err) {
             return err;

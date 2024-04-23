@@ -9,3 +9,14 @@ export const fetchData = async (link) => {
         console.log(err);
     }
 };
+
+export const getLocaleDateString = (
+    date,
+    { month = "numeric", day = "numeric", year = "numeric" }
+) => {
+    return new Date(date).toLocaleDateString("ru-RU", {
+        month,
+        day,
+        year,
+    });
+};

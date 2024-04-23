@@ -1,8 +1,4 @@
 import React, { useEffect } from "react";
-
-import { Section } from "../Section/Section";
-import { Subtitle } from "../Subtitle/Subtitle";
-
 import { useDispatch, useSelector } from "react-redux";
 
 import {
@@ -10,6 +6,10 @@ import {
     selectTourItem,
     selectisLoading,
 } from "../../redux/slice/Tour";
+
+import { Section } from "../Section/Section";
+import { Subtitle } from "../Subtitle/Subtitle";
+
 import { TourItem } from "./TourItem";
 import { Link } from "react-router-dom";
 
@@ -21,8 +21,6 @@ export const TourSection = () => {
     const filteredItems = Array.from(tourItems)
         .filter(({ soldOut }) => !soldOut)
         .filter((_, i) => i < 5);
-
-    console.log(filteredItems);
 
     useEffect(() => {
         dispatch(fetchTourData());

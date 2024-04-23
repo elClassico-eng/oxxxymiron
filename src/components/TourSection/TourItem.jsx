@@ -3,10 +3,12 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import { fadeInDown } from "react-animations";
 
+import { getLocaleDateString } from "../../utils/common";
+
 import { Icon } from "../Icon/Icon";
 
-const RollIn = styled.div`
-    animation: 3s ${keyframes`${fadeInDown} infinite `};
+const FadeInDown = styled.div`
+    animation: 6s ${keyframes`${fadeInDown} infinite `};
 `;
 
 export const TourItem = ({
@@ -20,14 +22,10 @@ export const TourItem = ({
 }) => {
     return (
         <li>
-            <RollIn className="tour-item">
+            <FadeInDown className="tour-item">
                 <div className="tour-item__info">
                     <div className="tour-item__date">
-                        {new Date(date).toLocaleDateString("ru-RU", {
-                            month: "numeric",
-                            day: "numeric",
-                            year: "numeric",
-                        })}
+                        {getLocaleDateString(date, {})}
                     </div>
                     <p className="tour-item__place">{place}</p>
                 </div>
@@ -52,7 +50,7 @@ export const TourItem = ({
                         Sold out
                     </button>
                 )}
-            </RollIn>
+            </FadeInDown>
         </li>
     );
 };
