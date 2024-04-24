@@ -3,6 +3,7 @@ import { MainBanner } from "./MainBanner";
 import { TourSection } from "../TourSection/TourSection";
 import { TourBanner } from "./TourBanner";
 import { Track } from "../Tracks/Track";
+import { ShopBanner } from "./ShopBanner";
 
 export const Home = () => {
     return (
@@ -11,6 +12,7 @@ export const Home = () => {
             <TourSection />
             <TourBanner />
             <Track />
+            <ShopBanner />
         </main>
     );
 };
