@@ -27,12 +27,6 @@ export const Track = () => {
 
     const filteredItems = Array.from(tracksItems).filter((_, i) => i < 3);
 
-    console.log(isLoading);
-
-    filteredItems.map(({ date, link, title }) => {
-        console.log(date, link.url, title);
-    });
-
     useEffect(() => {
         dispatch(fetchTraksData());
     }, [dispatch]);

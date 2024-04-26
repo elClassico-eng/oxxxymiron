@@ -4,6 +4,8 @@ export const MENU_URL_TOUR =
 export const MENU_URL_TRACKS =
     "https://65d2fe7c522627d50107c477.mockapi.io/TrackItems";
 
+export const MENU_URL_NEWS = "https://662b5a62de35f91de157f171.mockapi.io/News";
+
 export const MENU = [
     { name: "Концерты", link: "tour" },
     { name: "Творчество", link: "#tracks" },

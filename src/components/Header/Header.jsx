@@ -8,7 +8,6 @@ import styled, { keyframes } from "styled-components";
 
 import { MENU } from "../../utils/constants";
 import { Socials } from "../Socials/Socials";
-import { TourSection } from "../TourSection/TourSection";
 
 const Bounce = styled.div`
     animation: 2s ${keyframes`${bounce}`};

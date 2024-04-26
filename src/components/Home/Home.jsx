@@ -4,6 +4,7 @@ import { TourSection } from "../TourSection/TourSection";
 import { TourBanner } from "./TourBanner";
 import { Track } from "../Tracks/Track";
 import { ShopBanner } from "./ShopBanner";
+import { News } from "../News/News";
 
 export const Home = () => {
     return (
@@ -13,6 +14,7 @@ export const Home = () => {
             <TourBanner />
             <Track />
             <ShopBanner />
+            <News />
         </main>
     );
 };
